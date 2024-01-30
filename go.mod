@@ -1,4 +1,4 @@
-module github.com/go-co-op/gocron-gorm-lock
+module github.com/northseadl/gocron-gorm-lock
 
 go 1.20
 

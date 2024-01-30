@@ -15,8 +15,8 @@ type CronJobLock struct {
 	UpdatedAt     time.Time
 	JobName       string `gorm:"index:idx_name,unique"`
 	JobIdentifier string `gorm:"index:idx_name,unique"`
-	Worker        string `gorm:"not null;default:null"`
-	Status        string `gorm:"not nullldefault:null"`
+	Worker        string `gorm:"not null"`
+	Status        string `gorm:"not null"`
 }
 
 func (cjb *CronJobLock) SetJobIdentifier(ji string) {
