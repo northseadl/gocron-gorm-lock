@@ -3,10 +3,10 @@ package gormlock
 import (
 	"context"
 	"fmt"
+	"github.com/go-co-op/gocron/v2"
 	"sync/atomic"
 	"time"
 
-	"github.com/go-co-op/gocron"
 	"gorm.io/gorm"
 )
 
